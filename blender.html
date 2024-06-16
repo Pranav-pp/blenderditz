@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100px, initial-scale=1.0">
+    <title>blenderditz</title>
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            overflow: hidden;
+            height: 100vh;
+        }
+        .title {
+            position: absolute;
+            top: -10px;
+            left: 0px;
+            font-size: 36px;
+            color: white;
+            z-index: 10;
+        }
+        .circle {
+            position: absolute;
+            border-radius: 50%;
+            box-shadow: 0 8px 8px rgba(0, 0, 0, 0.4);
+            z-index: 1;
+            animation: ease-in 2;
+        }
+        .circle.blue {
+            background-color: blue;
+            width: 330px;
+            height: 330px;
+            top: -155px;
+            left: -110px;
+           transition: background-color 0.3s, transform 0.3s;
+        }
+        .circle.blue:hover {
+            transform: scale(1.1);
+        }
+        .circle.red {
+            background-color: red;
+            width: 300px;
+            height: 300px;
+            top: -150px;
+            left: -100px;
+           transition: background-color 0.3s, transform 0.3s;
+        }
+        .circle.red:hover {
+            transform: scale(1.1);
+        }
+        .text {
+            position: relative;
+            top: 20px;
+            left: 1000px;
+            font-size: 32px;
+            color: lightyellow;
+            max-width: 300px;
+            z-index: 10;
+        }
+        .options {
+            position: relative;
+            top: 230px;
+            left: 0px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            z-index: 10;
+        }
+        .option {
+            font-size: 28px;
+            color: white;
+            background-color: orange;
+            padding: 5px 30px;
+            border-radius: 10px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .option:hover {
+            color: grey;
+            background-color: lightblue;
+            transform: scale(1.15);
+        }
+        .image {
+            position: absolute;
+            border-radius: 15px; /* Round edges */
+            width: 200px; /* Set the width of the images */
+            height: auto; /* Set the height of the images */
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s;
+        }
+        .image:hover {
+            transform: scale(1.19);
+        }
+        .image1 { top: 50px; left: 250px; }
+        .image2 { top: 200px; left: 470px; }
+        .image3 { top: 200px; left: 30px; }
+        .image4 { top: 50px; left: 690px; }
+        }
+
+        @keyframes ease-in {
+            0% {
+                transform: translate(-100%, -100%)
+           }
+            100% {
+                transform: translate(100%, 100%);
+            }
+        }
+        .rounded-rectangle {
+            position: absolute;
+            top: 300px;
+            left: 1010px;
+            width: 150px;
+            height: 150px;
+            border-radius: 100px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            z-index: 5;
+        }
+        .rounded-rectangle img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="title"><p style="font-family:Impact">BLENDERDITZ</p></div>
+    <div class="circle blue"></div>
+    <div class="circle red"></div>
+    <div class="text"><p style="font-family:Arial">I'm a blender animator. DM for animations and intros! Projects will be sent within a week. Probabily :)</p></div>
+    <div class="options">
+        <a href="https://www.instagram.com/reel/C5ySi-dp8b3/?igsh=bjB4eTd0ZXA5b2o=" class="option"><p style="font-family:Impact">Projects</p></a>
+        <a href="https://www.instagram.com/blenderditz?igsh=M2U0dWkweTV2dGE3" class="option"><p style="font-family:Impact">DM Here</p></a>
+    </div>
+
+    <!-- Add your images here -->
+    <img src="steer.png" class="image image1" alt="Image 1">
+    <img src="posche gear.png" class="image image2" alt="Image 2">
+    <img src="Screenshot.png" class="image image3" alt="Image 3">
+    <img src="studio_porsche.png" class="image image4" alt="Image 4">
+    </div>
+    <!-- Rounded rectangle image -->
+    <div class="rounded-rectangle">
+        <img src="logo.jpeg" alt="logo">
+    </div>
+</body>
+</html>
